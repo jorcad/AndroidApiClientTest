@@ -4,5 +4,15 @@
     <string name="app_name">Android Api Client Test</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    
+    <string name="label_set_connection_timeout">Set connection timeout</string>
+    <string name="label_set_socket_timeout">Set socket timeout</string>
+    <string name="label_add_path">Add Path</string>
+    <string name="label_add_param">Add Param</string>
+    <string name="label_add_header">Add Header</string>
+    <string name="label_add_content">Add Content</string>
+    <string name="label_execute">Execute</string>
+    <string name="text_enable_connection_retry"> Enable connection timeout retry</string>
+    <string name="text_enable_socket_retry"> Enable socket timeout retry</string>
 
 </resources>
