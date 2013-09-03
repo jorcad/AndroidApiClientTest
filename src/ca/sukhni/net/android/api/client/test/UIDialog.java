@@ -22,17 +22,18 @@ public class UIDialog
 	/**
      * Private member variables.
      */
-    protected String             	mMessage           	= null;    	//< @string id for the actual message of the dialog
-    protected Integer             	mIcon           	= null;    	//< @drawable id for the icon to use (default is icon_small)
-    protected String             	mTitle             	= null;    	//< @string id for the title of the dialog (default is app_name)
+    protected String             	mMessage           		= null;    	//< @string id for the actual message of the dialog
+    protected Integer             	mIcon           		= null;    	//< @drawable id for the icon to use (default is icon_small)
+    protected String             	mTitle             		= null;    	//< @string id for the title of the dialog (default is app_name)
     
-    protected CallbackHandler      	mHandler          	 = null;    //< Enabled success/fail reporting to higher-level code
-    protected AlertDialog          	mAlertDialog      	 = null;    //< Track if we've got an AlertDialog for manual GC
-    protected ProgressDialog       	mProgressDialog    	= null;    //< Same as mAlertDialog but for progress
-    protected EditText              mEditText         	 = null;    //< Instance of an EditText field, used with prompt_*() methods
-    protected Boolean               mCanCancel        	 = true;    //< Default to can cancel, set to false to prevent cancel
-    protected String                mBttnTextOK       	 = "OK";    //< String used to set the label of the "OK" button.
-    protected String               	mBttnTextCancel   	 = "CANCEL"; //< String used to set the label of the "Cancel" button.
+    protected CallbackHandler      	mHandler          	 	= null;    //< Enabled success/fail reporting to higher-level code
+    protected AlertDialog          	mAlertDialog      	 	= null;    //< Track if we've got an AlertDialog for manual GC
+    protected ProgressDialog       	mProgressDialog    		= null;    //< Same as mAlertDialog but for progress
+    protected EditText              mEditText         	 	= null;    //< Instance of an EditText field, used with prompt_*() methods
+    protected Boolean               mCanCancel        	 	= true;    //< Default to can cancel, set to false to prevent cancel
+    protected String                mBttnTextOK       	 	= "OK";    //< String used to set the label of the "OK" button.
+    protected String               	mBttnTextCancel   	 	= "CANCEL"; //< String used to set the label of the "Cancel" button.
+
 
     protected Context				  mContext			 = null;
     
@@ -388,7 +389,7 @@ public class UIDialog
         mEditText.setSingleLine(true);
         mEditText.setImeActionLabel("Done", EditorInfo.IME_ACTION_DONE);
         mEditText.setInputType(inputType);
-        mEditText.setText(hint);
+        mEditText.setHint(hint);
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setMessage(this.mMessage);
         builder.setTitle(mContext.getString(R.string.app_name));
@@ -399,21 +400,7 @@ public class UIDialog
         builder.setView(mEditText);
         mAlertDialog = builder.create();
         mAlertDialog.show();
-        
-//        Button neg = mAlertDialog.getButton(DialogInterface.BUTTON_NEGATIVE);
-//        Button pos = mAlertDialog.getButton(DialogInterface.BUTTON_POSITIVE);
-//        if(neg!=null)
-//        {
-//        	neg.setTextColor(StatefulActivity.this.getResources().getColor(R.color.general_text_color));
-//        	neg.setBackgroundResource(R.drawable.button_selector);
-//        }
-//        if(pos!=null)
-//        {
-//        	pos.setTextColor(StatefulActivity.this.getResources().getColor(R.color.general_text_color));
-//        	pos.setBackgroundResource(R.drawable.button_selector);
-//        }
     }
-
     /**
      * 
      * @param hint
@@ -450,19 +437,6 @@ public class UIDialog
         mAlertDialog = builder.create();
         
         mAlertDialog.show();
-        
-//        Button neg = mAlertDialog.getButton(DialogInterface.BUTTON_NEGATIVE);
-//        Button pos = mAlertDialog.getButton(DialogInterface.BUTTON_POSITIVE);
-//        if(neg!=null)
-//        {
-//        	neg.setTextColor(StatefulActivity.this.getResources().getColor(R.color.general_text_color));
-//        	neg.setBackgroundResource(R.drawable.button_selector);
-//        }
-//        if(pos!=null)
-//        {
-//        	pos.setTextColor(StatefulActivity.this.getResources().getColor(R.color.general_text_color));
-//        	pos.setBackgroundResource(R.drawable.button_selector);
-//        }
     }
     
     /**
@@ -473,7 +447,7 @@ public class UIDialog
      */
     final public void prompt_text(String hint)
     {
-        prompt_text_field(hint, InputType.TYPE_TEXT_VARIATION_NORMAL);
+        prompt_text_field(hint, InputType.TYPE_CLASS_TEXT);
     }
 
     /**

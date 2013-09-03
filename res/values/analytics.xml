@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ga_trackingId">UA-41663707-1</string>
+    <string name="ga_trackingId">UA-43635121-1</string>
     <bool name="ga_autoActivityTracking">true</bool>
-    <string name="ga_appName">Android Api Client</string>
-    <string name="ga_appVersion">1.0.0</string>
+    <string name="ga_appName">Simple Android Api Client</string>
+    <string name="ga_appVersion">0.8.4</string>
     <string name="ga_reportUncaughtExceptions">true</string>
     <string name="ga_sessionTimeout">60</string>
     <integer name="ga_dispatchPeriod">60</integer>
     <bool name="ga_reportUncaughtExceptions">true</bool>
     <bool name="ga_debug">false</bool>
     
-    <string name="com.sukhni.xsin.fb.activities.LaunchActivity">LaunchActivity</string>
+    <string name="ca.sukhni.net.android.api.client.test.DebbugerActivity">DebbugerActivity</string>
+    <string name="ca.sukhni.net.android.api.client.test.MainActivity">MainActivity</string>
     
 </resources>

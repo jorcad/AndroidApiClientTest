@@ -8,12 +8,19 @@
 package ca.sukhni.net.android.api.client.test;
 
 public final class R {
+    public static final class array {
+        public static final int method=0x7f080000;
+    }
     public static final class attr {
     }
     public static final class bool {
         public static final int ga_autoActivityTracking=0x7f060000;
         public static final int ga_debug=0x7f060002;
         public static final int ga_reportUncaughtExceptions=0x7f060001;
+    }
+    public static final class color {
+        public static final int blue=0x7f090000;
+        public static final int color_green=0x7f090001;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -22,56 +29,90 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f080000;
-        public static final int activity_vertical_margin=0x7f080001;
-        public static final int default_bttn_size=0x7f080002;
+        public static final int activity_horizontal_margin=0x7f0a0000;
+        public static final int activity_vertical_margin=0x7f0a0001;
+        public static final int default_bttn_size=0x7f0a0002;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
         public static final int icon=0x7f020001;
         public static final int icon_small=0x7f020002;
+        public static final int layout_border_2=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a000a;
-        public static final int add_content_bttn=0x7f0a0005;
-        public static final int add_header_bttn=0x7f0a0004;
-        public static final int add_param_bttn=0x7f0a0003;
-        public static final int add_path_bttn=0x7f0a0002;
-        public static final int connection_timeout_bttn=0x7f0a0006;
-        public static final int enable_connection_timeout_toggleBttn=0x7f0a0008;
-        public static final int enable_socket_timeout_toggleBttn=0x7f0a0009;
-        public static final int scrollView1=0x7f0a0000;
-        public static final int socket_timeout_bttn=0x7f0a0007;
-        public static final int textView1=0x7f0a0001;
+        public static final int action_settings=0x7f0c001a;
+        public static final int add_button=0x7f0c0019;
+        public static final int add_header_bttn=0x7f0c0007;
+        public static final int add_param_bttn=0x7f0c0006;
+        public static final int add_path_bttn=0x7f0c0005;
+        public static final int api_call_textView=0x7f0c0001;
+        public static final int body_edit_text=0x7f0c0010;
+        public static final int cancel_button=0x7f0c0017;
+        public static final int connection_timeout_bttn=0x7f0c0009;
+        public static final int connection_timeout_edit_text=0x7f0c0011;
+        public static final int content_edit_text=0x7f0c0016;
+        public static final int done_button=0x7f0c0018;
+        public static final int enable_connection_timeout_toggleBttn=0x7f0c000b;
+        public static final int enable_socket_timeout_toggleBttn=0x7f0c000c;
+        public static final int exec_button=0x7f0c0013;
+        public static final int execute_btton=0x7f0c0002;
+        public static final int method_spinner=0x7f0c0003;
+        public static final int name_edit_text=0x7f0c0014;
+        public static final int scrollView1=0x7f0c0000;
+        public static final int set_base_uri_bttn=0x7f0c0004;
+        public static final int set_content_bttn=0x7f0c0008;
+        public static final int socket_timeout_bttn=0x7f0c000a;
+        public static final int socket_timeout_edit_text=0x7f0c0012;
+        public static final int textView1=0x7f0c000d;
+        public static final int textView2=0x7f0c000f;
+        public static final int url_edit_text=0x7f0c000e;
+        public static final int value_edit_text=0x7f0c0015;
     }
     public static final class integer {
         public static final int ga_dispatchPeriod=0x7f070000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int debugger_layout=0x7f030001;
+        public static final int input_dialog_layout=0x7f030002;
+        public static final int response_layout=0x7f030003;
     }
     public static final class menu {
-        public static final int main=0x7f090000;
+        public static final int main=0x7f0b0000;
     }
     public static final class string {
-        public static final int action_settings=0x7f040007;
+        public static final int action_settings=0x7f040008;
         public static final int app_name=0x7f040000;
-        public static final int com_sukhni_xsin_fb_activities_LaunchActivity=0x7f040006;
+        public static final int ca_sukhni_net_android_api_client_test_DebbugerActivity=0x7f040006;
+        public static final int ca_sukhni_net_android_api_client_test_MainActivity=0x7f040007;
         public static final int ga_appName=0x7f040002;
         public static final int ga_appVersion=0x7f040003;
         public static final int ga_reportUncaughtExceptions=0x7f040004;
         public static final int ga_sessionTimeout=0x7f040005;
         public static final int ga_trackingId=0x7f040001;
-        public static final int hello_world=0x7f040008;
-        public static final int label_add_content=0x7f04000e;
-        public static final int label_add_header=0x7f04000d;
-        public static final int label_add_param=0x7f04000c;
-        public static final int label_add_path=0x7f04000b;
-        public static final int label_execute=0x7f04000f;
-        public static final int label_set_connection_timeout=0x7f040009;
-        public static final int label_set_socket_timeout=0x7f04000a;
-        public static final int text_enable_connection_retry=0x7f040010;
-        public static final int text_enable_socket_retry=0x7f040011;
+        public static final int hello_world=0x7f040009;
+        public static final int hint_content=0x7f040016;
+        public static final int hint_name=0x7f040014;
+        public static final int hint_url=0x7f04001d;
+        public static final int hint_value=0x7f040015;
+        public static final int label_add=0x7f040017;
+        public static final int label_add_header=0x7f04000e;
+        public static final int label_add_param=0x7f04000d;
+        public static final int label_add_path=0x7f04000c;
+        public static final int label_body=0x7f04001c;
+        public static final int label_execute=0x7f040011;
+        public static final int label_set_base_uri=0x7f040010;
+        public static final int label_set_connection_timeout=0x7f04000a;
+        public static final int label_set_content=0x7f04000f;
+        public static final int label_set_socket_timeout=0x7f04000b;
+        public static final int label_url=0x7f04001b;
+        public static final int lable_cancel=0x7f040019;
+        public static final int lable_done=0x7f040018;
+        public static final int text_enable_connection_retry=0x7f040012;
+        public static final int text_enable_socket_retry=0x7f040013;
+        public static final int text_method_type=0x7f04001a;
+        public static final int value_connection_timeout=0x7f04001e;
+        public static final int value_socket_timeout=0x7f04001f;
     }
     public static final class style {
         /** 

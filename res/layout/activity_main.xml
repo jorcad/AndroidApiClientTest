@@ -9,12 +9,45 @@
         android:orientation="vertical" >
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/api_call_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hello_world" />
+            android:text="@string/hello_world"
+            android:layout_marginBottom="15dp" />
         
+        <Button
+            android:id="@+id/execute_btton"
+            android:layout_width="@dimen/default_bttn_size"
+            android:layout_height="wrap_content"
+            android:text="@string/label_execute" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_method_type"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical" />
+
+            <Spinner
+                android:id="@+id/method_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/set_base_uri_bttn"
+            android:layout_width="@dimen/default_bttn_size"
+            android:layout_height="wrap_content"
+            android:text="@string/label_set_base_uri" />
+        
         <Button
             android:id="@+id/add_path_bttn"
             android:layout_width="@dimen/default_bttn_size"
@@ -34,10 +67,10 @@
             android:text="@string/label_add_header" />
 
         <Button
-            android:id="@+id/add_content_bttn"
+            android:id="@+id/set_content_bttn"
             android:layout_width="@dimen/default_bttn_size"
             android:layout_height="wrap_content"
-            android:text="@string/label_add_content" />
+            android:text="@string/label_set_content" />
         
         <Button
             android:id="@+id/connection_timeout_bttn"

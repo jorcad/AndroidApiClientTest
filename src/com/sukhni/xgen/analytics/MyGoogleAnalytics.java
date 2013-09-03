@@ -118,6 +118,7 @@ public class MyGoogleAnalytics
 		try
 		{
 			EasyTracker.getInstance().activityStart(activity);
+			Logger.info(TAG + ": sendException(Activity): Tracker START");
 		}
 		catch(Exception ex)
 		{
@@ -135,6 +136,7 @@ public class MyGoogleAnalytics
 		try
 		{
 			EasyTracker.getInstance().activityStart(activity);
+			Logger.info(TAG + ": sendException(Activity): Tracker STOP");
 		}
 		catch(Exception ex)
 		{

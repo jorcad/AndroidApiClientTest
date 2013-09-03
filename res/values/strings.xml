@@ -3,16 +3,29 @@
 
     <string name="app_name">Android Api Client Test</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Hello API!</string>
     
     <string name="label_set_connection_timeout">Set connection timeout</string>
     <string name="label_set_socket_timeout">Set socket timeout</string>
     <string name="label_add_path">Add Path</string>
     <string name="label_add_param">Add Param</string>
     <string name="label_add_header">Add Header</string>
-    <string name="label_add_content">Add Content</string>
+    <string name="label_set_content">Set Content</string>
+    <string name="label_set_base_uri">Set Base Url</string>
     <string name="label_execute">Execute</string>
     <string name="text_enable_connection_retry"> Enable connection timeout retry</string>
     <string name="text_enable_socket_retry"> Enable socket timeout retry</string>
+    <string name="hint_name">name</string>
+    <string name="hint_value">value</string>
+    <string name="hint_content">content/body/entity</string>
+    <string name="label_add">Add</string>
+    <string name="lable_done">Done</string>
+    <string name="lable_cancel">Cancel</string>
+    <string name="text_method_type">Method type: </string>
+    <string name="label_url">URL</string>
+    <string name="label_body">Body</string>
+    <string name="hint_url">http://www.example.com/path?p1=test&#38;p2=ex</string>
+    <string name="value_connection_timeout">6000</string>
+    <string name="value_socket_timeout">6000</string>
 
 </resources>
