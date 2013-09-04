@@ -27,5 +27,6 @@
     <string name="hint_url">http://www.example.com/path?p1=test&#38;p2=ex</string>
     <string name="value_connection_timeout">6000</string>
     <string name="value_socket_timeout">6000</string>
+    <string name="release_message">get source code from:\n https://github.com/jorcad/AndroidApiClient/releases</string>
 
 </resources>

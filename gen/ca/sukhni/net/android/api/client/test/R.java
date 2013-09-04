@@ -40,24 +40,25 @@ public final class R {
         public static final int layout_border_2=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f0c001a;
-        public static final int add_button=0x7f0c0019;
+        public static final int action_settings=0x7f0c001b;
+        public static final int add_button=0x7f0c001a;
         public static final int add_header_bttn=0x7f0c0007;
         public static final int add_param_bttn=0x7f0c0006;
         public static final int add_path_bttn=0x7f0c0005;
         public static final int api_call_textView=0x7f0c0001;
         public static final int body_edit_text=0x7f0c0010;
-        public static final int cancel_button=0x7f0c0017;
+        public static final int cancel_button=0x7f0c0018;
         public static final int connection_timeout_bttn=0x7f0c0009;
         public static final int connection_timeout_edit_text=0x7f0c0011;
-        public static final int content_edit_text=0x7f0c0016;
-        public static final int done_button=0x7f0c0018;
+        public static final int content_edit_text=0x7f0c0017;
+        public static final int done_button=0x7f0c0019;
         public static final int enable_connection_timeout_toggleBttn=0x7f0c000b;
         public static final int enable_socket_timeout_toggleBttn=0x7f0c000c;
         public static final int exec_button=0x7f0c0013;
         public static final int execute_btton=0x7f0c0002;
+        public static final int link_text_view=0x7f0c0014;
         public static final int method_spinner=0x7f0c0003;
-        public static final int name_edit_text=0x7f0c0014;
+        public static final int name_edit_text=0x7f0c0015;
         public static final int scrollView1=0x7f0c0000;
         public static final int set_base_uri_bttn=0x7f0c0004;
         public static final int set_content_bttn=0x7f0c0008;
@@ -66,7 +67,7 @@ public final class R {
         public static final int textView1=0x7f0c000d;
         public static final int textView2=0x7f0c000f;
         public static final int url_edit_text=0x7f0c000e;
-        public static final int value_edit_text=0x7f0c0015;
+        public static final int value_edit_text=0x7f0c0016;
     }
     public static final class integer {
         public static final int ga_dispatchPeriod=0x7f070000;
@@ -108,6 +109,7 @@ public final class R {
         public static final int label_url=0x7f04001b;
         public static final int lable_cancel=0x7f040019;
         public static final int lable_done=0x7f040018;
+        public static final int release_message=0x7f040020;
         public static final int text_enable_connection_retry=0x7f040012;
         public static final int text_enable_socket_retry=0x7f040013;
         public static final int text_method_type=0x7f04001a;

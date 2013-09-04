@@ -4,6 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import android.os.Bundle;
+import android.text.util.Linkify;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -11,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.ToggleButton;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.CompoundButton.OnCheckedChangeListener;
@@ -101,6 +103,10 @@ public class DebbugerActivity extends BaseActivity
 				}
 			}
 		});
+		
+		TextView tvLink = (TextView) findViewById(R.id.link_text_view);
+		Linkify.addLinks(tvLink, Linkify.ALL);
+		
 	}
 	
 	private boolean checkParameters()
